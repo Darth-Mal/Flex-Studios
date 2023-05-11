@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    cursor: default;
+    overflow: hidden;
+}
+
+.formSection{
+
+    position: absolute;
+    top: 50px;
+    z-index: 7777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.formSection::before{
+    content: '';
+    display: none;
+}
+
+.backgroundwindow{
+    /* background-color: aqua; */
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+
+ img{
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+
+
+
+.divblock{
+    /* background-color: blue; */
+    width: 400px;
+    height: 450px;
+    min-width: 100px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    position: relative;
+
+}
+
+
+.h2{
+ 
+    font-size: 35px;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0px;
+    width: 310px;
+    border-bottom: 1px solid;
+    height: 30px;
+     /* background-color: black; */
+
+
+}
+
+@media (max-width: 40em) {
+
+    .divblock{
+        width: 290px;
+    }
+
+    .inputbox{
+        width: 180px;
+        
+    }
+    }
+   
+
+.inputbox label {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transform: translateY(100%);
+    font-size: 12px;
+    transition: 0.2s ease;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.inputbox input:focus ~ label, 
+.inputbox  input:valid ~ label
+{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 11px;
+    opacity: 1;
+}
+
+.inputbox input {
+    position: absolute;
+    background: transparent;
+    border: none;
+    width: 100%;
+    bottom: 0;
+    outline: 0;
+    padding: 0px 90px 2px 0px;
+    color: white;
+    font-size: 13px;
+    
+}
+
+.remember_me,
+.password,
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+a{
+    color: white;
+
+}
+
+button{
+    width: 90%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition:cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.2s;
+    background-color: #6d0d10;
+    
+}
+
+.submitbutton{
+    font-family: 'sangbleu_sunriseregular';
+    font-size: 17px;
+    color: white;
+    
+    }
+
+.buttondiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttondiv:active{
+    width: 95%;
+    height: 93.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+background-color: #ae2e32;;
+}
+
+button:active{
+width: 95%;
+height: 28px;
+background-color: #6d0d10;
+}
+
+.divblock{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h2{
+    
+    font-size: 40px;
+}
+
+
+
+.portfolioSection{
+
+    display: flex;
+    position: relative;
+    min-height: 90vh;
+    height: 100vh;
+
+}
+
+.portfolioSection::before{
+
+    display: none;
+
+}
+
+.gradient3{
+
+    display: none;
+}
+
+.formSection{
+    height: 90vh;
+}
+
+
+.footer{
+    width: 90vw;
+    margin: 0 15px;
+    position: absolute;
+    z-index: 7777;
+    bottom: 10px;
+    object-position: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+
+   
+}
+
+
+@media (max-width: 28.75em) {
+    .footer{
+        width: 90vw;
+        margin: 0 15px;
+        position: absolute;
+        z-index: 7777;
+        bottom: 10px;
+        display: flex;
+        object-position: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.7rem;
+        color: white;
+    
+       
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
